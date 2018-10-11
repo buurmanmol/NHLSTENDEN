@@ -51,32 +51,32 @@ namespace Week1
 
             int lengthInCm;
             int circumference;
-            int acceptedSex = 0;
+            int acceptedgender = 0;
 
-            String sex = Console.ReadLine();
+            String gender = Console.ReadLine();
 
             switch (chosenLanguage)
             {
                 case "DUTCH":
 
                     Console.WriteLine("Bent u een man of een vrouw");
-                    sex = Console.ReadLine();
-                    sex = sex.ToUpper();
+                    gender = Console.ReadLine();
+                    gender = gender.ToUpper();
 
-                    while (acceptedSex != 1)
+                    while (acceptedgender != 1)
                     {
-                        if (sex == "MAN")
+                        if (gender == "MAN")
                         {
-                            acceptedSex++;
+                            acceptedgender++;
                             Console.WriteLine("Hoe lang bent u? (in centimeters): ");
                             lengthInCm = Convert.ToInt32(Console.ReadLine());
                             var calculationMan = (lengthInCm - 100) * 0.9;
                             Console.WriteLine("Het ideale lichaamsgewicht voor u is: " + calculationMan);
 
                         }
-                        else if (sex == "VROUW")
+                        else if (gender == "VROUW")
                         {
-                            acceptedSex++;
+                            acceptedgender++;
                             Console.WriteLine("Hoe lang bent u? (in centimeters): ");
                             lengthInCm = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("Wat is uw pols omtrek? (in centimeters):  ");
@@ -87,31 +87,31 @@ namespace Week1
                         else
                         {
                             Console.WriteLine("U moet kiezen uit Man of Vrouw. Probeer het opnieuw: ");
-                            sex = Console.ReadLine();
-                            sex = sex.ToUpper();
+                            gender = Console.ReadLine();
+                            gender = gender.ToUpper();
                         }
                     }
                     break;
                 case "ENGLISH":
 
                     Console.WriteLine("Are you a male or a female?");
-                    sex = Console.ReadLine();
-                    sex = sex.ToUpper();
+                    gender = Console.ReadLine();
+                    gender = gender.ToUpper();
 
-                    while (acceptedSex != 1)
+                    while (acceptedgender != 1)
                     {
-                        if (sex == "MALE")
+                        if (gender == "MALE")
                         {
-                            acceptedSex++;
+                            acceptedgender++;
                             Console.WriteLine("How tall are you? (in centimeters): ");
                             lengthInCm = Convert.ToInt32(Console.ReadLine());
                             var calculationMan = (lengthInCm - 100) * 0.9;
                             Console.WriteLine("The ideal weight for you is: " + calculationMan);
 
                         }
-                        else if (sex == "FEMALE")
+                        else if (gender == "FEMALE")
                         {
-                            acceptedSex++;
+                            acceptedgender++;
                             Console.WriteLine("How tall are you? (in centimeters): ");
                             lengthInCm = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("What is your wrist width?:  ");
@@ -122,8 +122,8 @@ namespace Week1
                         else
                         {
                             Console.WriteLine("You have to choose a gender. Please try again: ");
-                            sex = Console.ReadLine();
-                            sex = sex.ToUpper();
+                            gender = Console.ReadLine();
+                            gender = gender.ToUpper();
                         }
                     }
                     break;
