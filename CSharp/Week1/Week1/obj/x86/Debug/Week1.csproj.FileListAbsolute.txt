@@ -1,0 +1,5 @@
+/Users/jeroenhulshof/Projects/Week1/Week1/bin/Debug/Week1.exe
+/Users/jeroenhulshof/Projects/Week1/Week1/bin/Debug/Week1.pdb
+/Users/jeroenhulshof/Projects/Week1/Week1/obj/x86/Debug/Week1.csproj.CoreCompileInputs.cache
+/Users/jeroenhulshof/Projects/Week1/Week1/obj/x86/Debug/Week1.exe
+/Users/jeroenhulshof/Projects/Week1/Week1/obj/x86/Debug/Week1.pdb

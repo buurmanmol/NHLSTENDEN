@@ -1,0 +1,63 @@
+
+<!-- 
+
+Assignment: 1 - HTML page, Contact.html, Contact Page
+Made by: Jeroen Hulshof
+Class: 1E
+Date: 07-10-2018
+
+!-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container"> <!-- Start Container !-->
+		<div class="header"> <!-- Start Header !-->
+			<div id="logo-img">
+				<img src="img/placeholder-logo.png" width="200" height="200">
+			</div>
+			<div style="float: right; width: 30%">
+				<ul class="nav-ul" style="margin-top: 25%;">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="hobby.html">Hobby's</a></li>
+					<li class="nav-active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clear-float"></div> <!-- Clear float !-->
+		</div> <!-- End Header !-->
+
+		<div class="row-white" id="aboutMe"> <!-- Start Row-grey !-->
+			<div id="intro"> 
+				<h1>Contact</h1>
+				<p>Neem gerust contact met mij op wanneer u vragen heeft.</p>
+				<form style="text-align: left;">
+			  		Voornaam:<br />
+			  		<input type="text" name="firstname"><br>
+			  		Achternaam:<br />
+			  		<input type="text" name="lastname">
+			  		Email-adres:<br />
+			  		<input type="email" name="email" placeholder="johndoe@provider.com">
+			  		Ik heb een vraag over:<br />
+			  		<select>
+					  <option value="volvo">CV</option>
+					  <option value="saab">Werkervaring</option>
+					  <option value="mercedes">Wat voor eten vindt je lekker</option>
+					</select>
+					Een korte toelichting: <br />
+					<textarea rows="10" cols="205"></textarea><br />
+					<button class="submit">Verzenden!</button>
+				</form>
+			</div>
+			<div class="clear-float"></div> <!-- Clear float !-->
+		</div> <!-- End Row-grey !-->
+
+	</div>
+
+</body>
+</html>
