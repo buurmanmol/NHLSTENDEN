@@ -1,0 +1,167 @@
+
+<!-- 
+
+Assignment: 2 - HTML page, index.html, Index page.
+Made by: Jeroen Hulshof
+Class: 1E
+Date: 07-10-2018
+
+!-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg">
+	  <a class="navbar-brand" href="index.html"><u>WeddingPlanner.com</u></a>
+	  <i class="navbar-toggler fas fa-bars" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></i>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" id="hwhLink" href="#hwhDiv">Hoe werkt het</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#wishList">Wenslijst</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contactUs">Contact</a>
+	      </li>
+	      <!-- <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li> -->
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row customRow-noColor">
+			<div class="col-lg-12">
+				<h2><u>Welkom op WeddingPlanner.com</u></h2>
+				<p id="introText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nihil ad rem! Ne sit sane; Summus dolor plures dies manere non potest? Quae cum magnifice primo dici viderentur, considerata minus probabantur. Tu vero, inquam, ducas licet, si sequetur; Duo Reges: constructio interrete. Commoda autem et incommoda in eo genere sunt, quae praeposita et reiecta diximus; Eaedem res maneant alio modo.</p>
+
+				<p>Sed haec omittamus; Solum praeterea formosum, solum liberum, solum civem, stultost; Sextilio Rufo, cum is rem ad amicos ita deferret, se esse heredem Q. Hoc non est positum in nostra actione. Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Ex quo, id quod omnes expetunt, beate vivendi ratio inveniri et comparari potest. Idem iste, inquam, de voluptate quid sentit?</p>
+			</div>
+		</div>
+
+	<div class="row customRow-pink" id="hwhDiv">
+		<div class="col-lg-12">
+           <h2><u>Hoe werkt het?</u></h2>
+           </div>
+	           	 <div class="col-md-4 placeholder-img">
+	                <img src="img/placeholder-circle.png">
+	            </div>
+	            <div class="col-md-4 placeholder-img">
+	                <img src="img/placeholder-circle.png">
+	            </div>
+	            <div class="col-md-4 placeholder-img">
+	                <img src="img/placeholder-circle.png">
+	            </div>
+	    	</div>
+
+	<div class="row customRow-noColor" id="wishList" style="text-align: left !important;">
+		<div class="col-lg-12">
+           <div class="card" style="width: 100%;">
+			  <div class="card-body">
+			    <h2 class="card-title" style="text-align: center !important;"><u>Wenslijst</u></h2>
+			    	<table class="table">
+				    <thead>
+				      <tr>
+				        <th>Cadeau</th>
+				        <th>Prijs</th>
+				        <th>Discussie</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>John</td>
+				        <td>Doe</td>
+				        <td><button class="btn btn-default">Praat mee!</button></td>
+				      </tr>
+				    </tbody>
+				</table>
+				<button class="btn btn-danger" style="text-align: left;" data-toggle="modal" data-target="#addItemModal">+ Voeg cadeau toe</button>
+			  </div>
+			</div>
+        </div>
+	</div>
+
+		<div class="row customRow-pink" id="contactUs">
+			<div class="col-lg-6">
+	           <h2><u>Heeft u vragen? Neem gerust contact met ons op. We staan 24/7 voor u klaar!</u></h2>
+	        </div>
+	        <div class="col-lg-6">
+				<form>
+					<div class="form-group">
+					    <label for="firstname">Voornaam</label>
+						<input type="text" class="form-control" id="firstname">
+					 </div>
+					 <div class="form-group">
+					    <label for="lastname">Achternaam</label>
+						<input type="text" class="form-control" id="lastname">
+					 </div>
+					 <div class="form-group">
+					    <label for="email">Email-adres</label>
+						<input type="email" class="form-control" id="email">
+					 </div>
+					 <div class="form-group">
+					    <label for="messageArea">Een kleine toelichting</label>
+					    <textarea class="form-control" id="messageArea" rows="8"></textarea>
+				    </div>
+				    <div class="form-group">
+					    <button style="width: 100%;" class="btn btn-danger btn-lg">Verzenden</button>
+				    </div>
+				</form>
+			</div>
+	    </div>
+
+	    <div class="footer">
+	    	<p style="text-align: center; padding-top: 2%;">&copy; WeddingPlanner.com 2018</p>
+	    </div>
+	</div> 
+</div> <!-- End container-fluid !-->
+
+<!-- AddItem Popup modal !-->
+<div id="addItemModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      	<h4 class="modal-title">Voeg een cadeau toe</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+    	<form>
+			<div class="form-group">
+			    <label for="giftName">Naam van het cadeau</label>
+				<input type="text" class="form-control" id="giftName" placeholder="Bosje bloemen">
+			 </div>
+			 <div class="form-group">
+			    <label for="price">Prijs van het cadeau</label>
+				<input type="number" class="form-control" id="price" placeholder="&euro;">
+			 </div>
+			</form>
+      </div>
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-danger">+ Nieuw cadeau</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

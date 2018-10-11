@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+}
+
+/* Fonts */
+@font-face {
+font-family: "Demo_ConeriaScript";
+src: url("../fonts/Demo_ConeriaScript.ttf");
+}
+
+@font-face {
+font-family: "Anydore";
+src: url("../fonts/Anydore.otf");
+}
+
+.container-fluid {
+	height: 100vh !important;
+}
+
+.navbar {
+	background-color: #ff3232a1;
+    height: 150px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.nav-link {
+	color: #FFF;
+}
+
+.nav-link:hover {
+	color: #FFF;
+	border: 1px solid #FFF;
+	padding: 7%;
+}
+
+.navbar-brand {
+	color: #FFF;
+	font-family: 'Demo_ConeriaScript';
+	font-style: unset;
+	text-align: left;
+}
+
+.navbar-brand:hover {
+	color: #FFF;
+}
+
+.customRow-noColor {
+	text-align: center !important;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	min-height: 100%;
+	font-size: 19px;
+}
+
+.customRow-noColor h2 {
+	font-family: 'Anydore';
+	font-style: unset;
+	color: #ff8d8d;
+}
+
+.customRow-pink {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: #ff32321c;
+	font-size: 19px;
+	min-height: 100%;
+}
+
+
+.customRow-pink h2 {
+	text-align: center !important;
+	font-family: 'Anydore';
+	font-style: unset;
+	color: #ff8d8d;
+}
+
+.customRow-pink img {
+	text-align: center;
+	width: 100% !important;
+}
+
+#introText {
+	margin-top: 10%;
+}
+
+.placeholder-img {
+	opacity: 1;
+}
+
+.btn-success {
+	background-color: #ff32321c !important;
+	border-color: #ff32321c !important;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1000px) {
+ 	.nav-link:hover { border: 0px solid; padding: 0%; }
+ 	.navbar { height: auto; }
+ 	.customRow { margin-top: 6%; }
+ 	.container-fluid { height: auto; }
+} 
